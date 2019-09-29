@@ -1,29 +1,55 @@
 
-public class PermultacaoSimples {
-
-	public static void main(String[] args) {
-		
+public class PermultacaoSimples {		
 	
-	double x = 69; // aqui criamos uma variável que irá armazenar o numero do fatorial
-	double f = x; // aqui criamos outra var. Será o resultado temporário da multiplicação
-
+	double numeroFatorial ; 
+	double f;
+	
+	
 		                  
 
+	public double getNumeroFatorial() {
+		return numeroFatorial;
+	}
+
+
+
+
+	public void setNumeroFatorial(double numeroFatorial) {
+		this.numeroFatorial = numeroFatorial;
+	}
+
+
+
+
+	public double getF() {
+		return f;
+	}
+
+
+
+
+	public void setF(double f) {
+		this.f = f;
+	}
+
 	
 
-	while (x > 1){
-	  f = f *(x-1); x--;
-	                    }
-	  System.out.println(f); // Aqui exibira o valor final do Fatorial
+	public void CalcularPermitaçãoSimpes() {
+		 f = numeroFatorial; 
 
-	 while (x > 1){ 
-	             f = f *(x-1);
-	             x--;
-	             System.out.println(f); // Aqui exibira o valor parcial do Fatorial, o seu último valor será o resultado do fatorial.               }
+		while (numeroFatorial > 1){
+		  f = f *(numeroFatorial-1); numeroFatorial--;
+		}
+		  System.out.println(f); // Aqui exibira o valor final do Fatorial
 	
+		 while (numeroFatorial > 1){ 
+		    f = f *(numeroFatorial-1);
+		    numeroFatorial--;
+		    System.out.println(f); 
 	
+		 }
 	
-}
+	 }
 	  
 }
-}
+
