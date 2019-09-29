@@ -2,36 +2,23 @@
 public class PermultacaoSimples {		
 	
 	double numeroFatorial ; 
-	double f;
-	
-	
-		                  
+	double f;	                  
 
 	public double getNumeroFatorial() {
 		return numeroFatorial;
 	}
 
-
-
-
 	public void setNumeroFatorial(double numeroFatorial) {
 		this.numeroFatorial = numeroFatorial;
 	}
-
-
-
 
 	public double getF() {
 		return f;
 	}
 
-
-
-
 	public void setF(double f) {
 		this.f = f;
 	}
-
 	
 
 	public void CalcularPermitaçãoSimpes() {
