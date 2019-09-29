@@ -40,7 +40,7 @@ public class PermultacaoSimples {
 		while (numeroFatorial > 1){
 		  f = f *(numeroFatorial-1); numeroFatorial--;
 		}
-		  System.out.println(f); // Aqui exibira o valor final do Fatorial
+		  System.out.printf("O Resultado desta Permutação é: %4.0f",f); // Aqui exibira o valor final do Fatorial
 	
 		 while (numeroFatorial > 1){ 
 		    f = f *(numeroFatorial-1);
