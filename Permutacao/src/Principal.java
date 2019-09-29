@@ -11,8 +11,8 @@ public class Principal {
 		System.out.println("Para calcular permutação SIMPLES digite 1 \nPara calcular permutação com REPETIÇÃO digite 2" );
 		int opcao = entrada.nextInt();
 		System.out.println("-------------------------------------------------");
-		while(opcao != 1 &&opcao != 2)
-		{
+		while(opcao != 1 &&opcao != 2){
+		
 			System.out.println("Digite apenas 1 ou 2 - informe novamente: ");
 			opcao = entrada.nextInt();
 		}
@@ -24,15 +24,15 @@ public class Principal {
 				System.out.println("-------------------------------------------------");
 				System.out.print("Digite um valor inteiro, positivo para permutar \n");
 				double result = entrada.nextDouble();
-				if (result <0) {
-					System.out.println("ERRO!, O Valor digitado é invalido");
+				
+				while (result <0) {
+					System.out.println("-------------------------------------------------");
+					System.out.println("ERRO!, O Valor digitado é invalido\n");
 					System.out.print("Digite um valor inteiro, positivo para permutar \n");
-					ps.setNumeroFatorial(entrada.nextDouble()); 
-					ps.CalcularPermitaçãoSimpes();
-				}else {
-					 ps.setNumeroFatorial(result); 
-					 ps.CalcularPermitaçãoSimpes();
+					result = entrada.nextDouble();
 				}
+				ps.setNumeroFatorial(result); 
+				ps.CalcularPermitaçãoSimpes();
 				
 			}
 			else if(opcao == 2) {
