@@ -5,6 +5,8 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		PermultacaoSimples ps = new PermultacaoSimples();
+		PermutacaoComRepeticao  pr =  new PermutacaoComRepeticao();
+		
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("-------------------------------------------------\n BEM VINDO!!!! \n-------------------------------------------------");
 		
