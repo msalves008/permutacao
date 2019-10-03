@@ -66,7 +66,8 @@ public class PermutacaoComRepeticao {
 			
 			public double permutacao() {
 				 double result;
-				 result  =  f;
+
+				 result  =  nfatorial / (rep1 *  rep2 * rep3 * rep4);
 				 
 				 
 				 return result;

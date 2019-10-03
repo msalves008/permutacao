@@ -6,9 +6,10 @@ public class Principal {
 		
 		PermultacaoSimples ps = new PermultacaoSimples();
 		PermutacaoComRepeticao  pr =  new PermutacaoComRepeticao();
+		Fatorial fatorial  = new Fatorial();
 		
 		Scanner entrada = new Scanner(System.in);
-		System.out.println("-------------------------------------------------\n BEM VINDO!!!! \n-------------------------------------------------");
+		System.out.println("--------------------------------------------\n BEM VINDO!!!! \n--------------------------------------------");
 		
 		System.out.println("Para calcular permutação SIMPLES digite 1 \nPara calcular permutação com REPETIÇÃO digite 2" );
 		int opcao = entrada.nextInt();
@@ -41,6 +42,23 @@ public class Principal {
 				System.out.println("-------------------------------------------------");
 				System.out.println("Opção desejada: Permultação Com Repetição \n");
 				System.out.println("-------------------------------------------------");
+				System.out.print("Digite um valor inteiro, positivo para permutar \n");
+				double result = entrada.nextDouble();
+				
+				while (result <0) {
+					System.out.println("-------------------------------------------------");
+					System.out.println("ERRO!, O Valor digitado é invalido\n");
+					System.out.print("Digite um valor inteiro, positivo para permutar \n");
+					result = entrada.nextDouble();
+				}
+				fatorial.setNumeroFatorial(result);
+				fatorial.CalcularFatorial();
+				pr.setNfatorial(fatorial.f);
+				//System.out.printf("\nNº do fatorial %4.0f ",pr.getNfatorial());
+				
+				System.out.print("Digite um valor inteiro, positivo para permutar da PRIMEIRA Repetição \n");
+				double rep1 = entrada.nextDouble();
+				
 			}
 		
 		
