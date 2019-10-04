@@ -68,7 +68,7 @@ public class PermutacaoComRepeticao {
 				 double result;
 
 				 result  =  nfatorial / (rep1 *  rep2 * rep3 * rep4);
-				 
+				 System.out.printf("O resultado FINAL da Permutação é: %4.0f", result);
 				 
 				 return result;
 			 }

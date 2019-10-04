@@ -56,9 +56,60 @@ public class Principal {
 				pr.setNfatorial(fatorial.f);
 				//System.out.printf("\nNº do fatorial %4.0f ",pr.getNfatorial());
 				
-				System.out.print("Digite um valor inteiro, positivo para permutar da PRIMEIRA Repetição \n");
+				System.out.print("\nDigite um valor inteiro, positivo para permutar da PRIMEIRA Repetição \n");
 				double rep1 = entrada.nextDouble();
+
+				while ( rep1 <0) {
+					System.out.println("-------------------------------------------------");
+					System.out.println("ERRO!, O Valor digitado é invalido\n");
+					System.out.print("Digite um valor inteiro, positivo para permutar \n");
+					 rep1 = entrada.nextDouble();
+				}
+				fatorial.setNumeroFatorial(rep1);
+				fatorial.CalcularFatorial();
+				pr.setRep1(fatorial.f);
 				
+				System.out.print("\nDigite um valor inteiro, positivo para permutar da PRIMEIRA Repetição \n");
+				double rep2 = entrada.nextDouble();
+
+				while ( rep2 <0) {
+					System.out.println("-------------------------------------------------");
+					System.out.println("ERRO!, O Valor digitado é invalido\n");
+					System.out.print("Digite um valor inteiro, positivo para permutar \n");
+					 rep2 = entrada.nextDouble();
+				}
+				fatorial.setNumeroFatorial(rep2);
+				fatorial.CalcularFatorial();
+				pr.setRep2(fatorial.f);
+				
+				System.out.print("\nDigite um valor inteiro, positivo para permutar da PRIMEIRA Repetição \n");
+				double rep3 = entrada.nextDouble();
+
+				while ( rep3 <0) {
+					System.out.println("-------------------------------------------------");
+					System.out.println("ERRO!, O Valor digitado é invalido\n");
+					System.out.print("Digite um valor inteiro, positivo para permutar \n");
+					 rep3 = entrada.nextDouble();
+				}
+				fatorial.setNumeroFatorial(rep3);
+				fatorial.CalcularFatorial();
+				pr.setRep3(fatorial.f);
+				
+				System.out.print("\nDigite um valor inteiro, positivo para permutar da PRIMEIRA Repetição \n");
+				double rep4 = entrada.nextDouble();
+
+				while ( rep4 <0) {
+					System.out.println("-------------------------------------------------");
+					System.out.println("ERRO!, O Valor digitado é invalido\n");
+					System.out.print("Digite um valor inteiro, positivo para permutar \n");
+					 rep4 = entrada.nextDouble();
+				}
+				fatorial.setNumeroFatorial(rep4);
+				fatorial.CalcularFatorial();
+				pr.setRep4(fatorial.f);
+				
+				
+				pr.permutacao();
 			}
 		
 		
