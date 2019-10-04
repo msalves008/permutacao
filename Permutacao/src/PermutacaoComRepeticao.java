@@ -71,8 +71,6 @@ public class PermutacaoComRepeticao {
 				 System.out.printf("O resultado FINAL da Permutação é: %4.0f", result);
 				 
 				 return result;
-			 }
-	 
- 
+			 }	 
  
 }
